@@ -16,6 +16,7 @@
   renderHtml(); // 渲染日历
   showCalendarData(); // 表格中显示日期
   bindEvent(); // 绑定事件
+  renderCopyright("陈梁子豪");
 
   function renderHtml() {
     var calendar = document.getElementById("calendar");
@@ -107,8 +108,6 @@
     var nextMonth = document.getElementById("nextMonth");
     prevMonth.addEventListener("click", toPrevMonth);
     nextMonth.addEventListener("click", toNextMonth);
-    addEvent(prevMonth, "click", toPrevMonth);
-    addEvent(nextMonth, "click", toNextMonth);
   }
 
   function toPrevMonth() {
@@ -130,6 +129,16 @@
     _month = _month > 9 ? "" + _month : "0" + _month;
     _d = _d > 9 ? "" + _d : "0" + _d;
     return _year + _month + _d;
+  }
+
+  function renderCopyright(name) {
+    if (name === undefined) name = "ChlorineC";
+    var node = document.getElementById("copyright");
+    if (node === undefined) {
+      console.log("Cannot find Copyright DOM");
+      return;
+    }
+    node.innerHTML = `<span class="cpy-text">本应用由 @${name} 创建<span>`;
   }
 })();
 

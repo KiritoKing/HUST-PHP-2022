@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>陈梁子豪的留言板</title>
 </head>
 <body>
 <h1>陈梁子豪的留言板</h1>
@@ -25,7 +25,7 @@
     foreach($message as $i)
     {
         $i = $i['content'];
-        echo "<li>$i</li>";
+        echo "<li style='margin-top: 10px; margin-bottom: 10px'>$i</li>";
     }
     ?>
 </ol>

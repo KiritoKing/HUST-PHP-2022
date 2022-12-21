@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "PHP",
+			"path": "."
+		},
+		{
+			"name": "1.Calendar",
+			"path": "1.Calendar"
+		},
+		{
+			"name": "2. SQL",
+			"path": "2. SQL"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1.Calendar"
+	}
+}
